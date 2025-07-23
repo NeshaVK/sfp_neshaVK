@@ -8,9 +8,12 @@ import time
 from streamlit_lottie import st_lottie
 
 # -------------------- Page Config --------------------
-st.set_page_config(page_title="Weather Buddy ☁️", layout="centered")
 
 # -------------------- Styling --------------------
+import streamlit as st
+
+st.set_page_config(page_title="Weather Buddy ☁️", layout="centered")
+
 st.markdown("""
     <style>
     .stApp {
@@ -81,9 +84,10 @@ st.markdown("""
         background-color: #00aaff;
     }
     </style>
-""", unsafe_allow_html=True)
+""", unsafe_allow_html=True)        
 
 
+# Example UI content (replace this part with your actual app logic)
 # -------------------- API Key --------------------
 api_key = os.getenv("OPENWEATHER_API_KEY")
 
